@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aes-js/3.1.2/index.min.js"></script>
+    <title>Hollow Knight hunter's journal fill</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="instructions">
+            <p id="description">This website will allow you to completely fill out your Hunter's Journal in Hollow Knight. To do this, select your save file (if you have the Steam version, it's located at C:\Users\%User%\AppData\LocalLow\Team Cherry\Hollow Knight) and click the "Save" button. There are usually no problems with the files, <b>but I still recommend backing up your save file first</b>.</p>
+            <p id="ps">You can see source code in <a href="https://github.com/micoil/hollow.git">gitHub repository</a></p>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <label class="input-file">
+                        <input type="file" id="fileInput" name="file" accept=".dat">
+                        <span class="input-file-btn">Select file</span>
+                    </label>
+                </div>
+                <input id="save" type="button" value="Save">
+            </form>
+        </div>
+    </div>
+    <script src="js/base64.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
